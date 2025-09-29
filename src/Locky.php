@@ -4,6 +4,7 @@ namespace Pavons\Locky;
 
 use Closure;
 use Illuminate\Support\Facades\Cache;
+use Pavons\Locky\Exceptions\CouldNotAcquireLockException;
 
 class Locky
 {
@@ -111,7 +112,7 @@ class Locky
      * @param  Closure():T  $critical
      * @return T
      *
-     * @throws \RuntimeException on failure (unless onFail returns a value)
+     * @throws CouldNotAcquireLockException on failure (unless onFail returns a value)
      */
     public function run(Closure $critical)
     {
@@ -141,7 +142,7 @@ class Locky
                 if ($this->onFail) {
                     return ($this->onFail)($this->key, $attempt);
                 }
-                throw new \RuntimeException("Could not acquire lock '{$this->key}' after {$attempt} attempts.");
+                throw CouldNotAcquireLockException::for($this->key, $attempt);
             }
 
             $sleepMs = $this->computeSleepMs($attempt);

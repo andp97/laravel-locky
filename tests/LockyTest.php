@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Cache;
+use Pavons\Locky\Exceptions\CouldNotAcquireLockException;
 use Pavons\Locky\Facades\Locky;
 
 it('can acquire lock and run critical section', function () {
@@ -68,7 +69,7 @@ it('throws exception when lock cannot be acquired and onFail is not set', functi
         ->run(function () {
             return 'success';
         });
-})->throws(RuntimeException::class, "Could not acquire lock 'test-key' after 3 attempts.");
+})->throws(CouldNotAcquireLockException::class, "Could not acquire lock 'test-key' after 3 attempts.");
 
 it('calls onRetry when lock is not acquired', function () {
     $lock = Mockery::mock();
