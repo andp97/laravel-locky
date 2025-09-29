@@ -54,4 +54,5 @@ composer analyse
 *   **Namespace:** The main namespace for the package is `Pavons\Locky`.
 *   **Service Provider:** The service provider is `Pavons\Locky\LockyServiceProvider`.
 *   **Testing:** The project uses Pest for testing.
+*   **Commit Messages:** This project follows the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) specification.
 *   **Contributing:** Contribution guidelines are available in `CONTRIBUTING.md`.
