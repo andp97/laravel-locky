@@ -24,7 +24,7 @@ class LockyServiceProvider extends PackageServiceProvider
         parent::register();
 
         $this->app->bind('locky', function () {
-            return new Locky();
+            return new Locky;
         });
     }
 }

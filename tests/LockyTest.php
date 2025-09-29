@@ -41,6 +41,7 @@ it('calls onFail when lock cannot be acquired', function () {
             $onFailCalled = true;
             expect($key)->toBe('test-key')
                 ->and($attempts)->toBe(3);
+
             return 'failed';
         })
         ->run(function () {
