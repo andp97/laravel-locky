@@ -8,13 +8,13 @@ Contributions are welcome, and they are greatly appreciated! Every little bit he
 
 This section guides you through submitting a bug report for this project. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
-Before creating bug reports, please check the [issue tracker](https://github.com/pavons/laravel-locky/issues) as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible. Fill out the required template, the information it asks for helps us resolve issues faster.
+Before creating bug reports, please check the [issue tracker](https://github.com/andp97/laravel-locky/issues) as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible. Fill out the required template, the information it asks for helps us resolve issues faster.
 
 ### Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion for this project, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
-Before creating enhancement suggestions, please check the [issue tracker](https://github.com/pavons/laravel-locky/issues) as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please include as many details as possible.
+Before creating enhancement suggestions, please check the [issue tracker](https://github.com/andp97/laravel-locky/issues) as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please include as many details as possible.
 
 ### Pull Requests
 
