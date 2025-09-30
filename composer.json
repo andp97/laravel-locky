@@ -34,14 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pavons\\Locky\\": "src/",
-            "Pavons\\Locky\\Database\\Factories\\": "database/factories/"
+            "Pavons\\Locky\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pavons\\Locky\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "Pavons\\Locky\\Tests\\": "tests/"
         }
     },
     "scripts": {
