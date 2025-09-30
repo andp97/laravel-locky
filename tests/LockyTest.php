@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Cache;
 use Pavons\Locky\Exceptions\CouldNotAcquireLockException;
 use Pavons\Locky\Facades\Locky;
 
+arch('it will not use debugging functions')
+    ->expect(['dd', 'dump', 'ray'])
+    ->each->not->toBeUsed();
+
 it('can acquire lock and run critical section', function () {
     $lock = Mockery::mock();
     $lock->shouldReceive('get')->once()->andReturn(true);
