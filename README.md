@@ -1,3 +1,5 @@
+![locky-image.png](locky-image.png)
+
 # A simple Laravel package for distributed lock
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andp97/laravel-locky.svg?style=flat-square)](https://packagist.org/packages/andp97/laravel-locky)
